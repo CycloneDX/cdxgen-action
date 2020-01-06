@@ -1,5 +1,3 @@
-node_modules/
-
 # Editors
 .vscode
 
@@ -64,5 +62,3 @@ typings/
 # next.js build output
 .next
 .tool-versions
-
-dist/

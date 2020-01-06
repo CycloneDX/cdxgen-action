@@ -15,7 +15,7 @@ Specifiy parameters for automatic submission to a dependency track or AppThreat 
 ```yaml
 uses: actions/cdxgen-action@v1
 with:
-  output: "./bom.xml"
+  output: "./docs/bom.xml"
   serverUrl: "https://deptrack.appthreat.io"
-  apiKey: "CHANGEME"
+  apiKey: ${{ secrets.apiKey }}
 ```
