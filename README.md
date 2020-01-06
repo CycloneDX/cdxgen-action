@@ -7,13 +7,13 @@ This GitHub action wraps the [cdxgen]() tool for generating Software Bill-of-Mat
 Simple usage, just print the xml to the console
 
 ```yaml
-uses: actions/cdxgen-action@v1
+uses: AppThreat/cdxgen-action@v1
 ```
 
 Specifiy parameters for automatic submission to a dependency track or AppThreat server
 
 ```yaml
-- uses: actions/cdxgen-action@v1
+- uses: AppThreat/cdxgen-action@v1
   with:
     output: "./reports/bom.xml"
     serverUrl: "https://deptrack.appthreat.io"
@@ -23,13 +23,13 @@ Specifiy parameters for automatic submission to a dependency track or AppThreat 
 Submit to server as well as store artefacts
 
 ```yaml
-- uses: actions/cdxgen-action@v1
+- uses: AppThreat/cdxgen-action@v1
   with:
     output: "./reports/bom.xml"
     serverUrl: "https://deptrack.appthreat.io"
     apiKey: ${{ secrets.apiKey }}
 
-- uses: actions/upload-artifact@v1
+- uses: AppThreat/upload-artifact@v1
   with:
     name: reports
     path: reports
