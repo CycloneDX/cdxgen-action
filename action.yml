@@ -24,4 +24,4 @@ outputs:
     description: "Server token to query for status"
 runs:
   using: "node12"
-  main: "dist/index.js"
+  main: "index.js"
