@@ -13,9 +13,24 @@ uses: actions/cdxgen-action@v1
 Specifiy parameters for automatic submission to a dependency track or AppThreat server
 
 ```yaml
-uses: actions/cdxgen-action@v1
-with:
-  output: "./bom.xml"
-  serverUrl: "https://deptrack.appthreat.io"
-  apiKey: "CHANGEME"
+- uses: actions/cdxgen-action@v1
+  with:
+    output: "./reports/bom.xml"
+    serverUrl: "https://deptrack.appthreat.io"
+    apiKey: ${{ secrets.apiKey }}
+```
+
+Submit to server as well as store artefacts
+
+```yaml
+- uses: actions/cdxgen-action@v1
+  with:
+    output: "./reports/bom.xml"
+    serverUrl: "https://deptrack.appthreat.io"
+    apiKey: ${{ secrets.apiKey }}
+
+- uses: actions/upload-artifact@v1
+  with:
+    name: reports
+    path: reports
 ```

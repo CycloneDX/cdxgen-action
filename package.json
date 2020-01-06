@@ -1,16 +1,11 @@
 {
-  "name": "javascript-action",
+  "name": "cdxgen-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "GitHub action to invoke cdxgen command. cdxgen produces Software Bill-of-Materials (BOM) xml for a range of projects",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint index.js",
-    "package": "ncc build index.js -o dist",
-    "test": "eslint index.js && jest"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/appthreat/cdxgen-action.git"
   },
   "keywords": [
     "cdxgen",
@@ -22,19 +17,15 @@
     "golang",
     "java"
   ],
-  "author": "GitHub",
+  "author": "Team AppThreat <cloud@appthreat.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/appthreat/cdxgen-action/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/appthreat/cdxgen-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.1",
+    "@actions/io": "^1.0.1",
     "@appthreat/cdxgen": "^1.2.1"
-  },
-  "devDependencies": {
-    "@zeit/ncc": "^0.21.0",
-    "eslint": "^6.8.0",
-    "jest": "^24.9.0"
   }
 }
