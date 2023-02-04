@@ -5,25 +5,25 @@ inputs:
     description: "Output file for bom.xml. Default console"
     required: true
   projectId:
-    description: "Dependency track or AppThreat project id. Either provide the id or the project name and version together"
+    description: "Dependency track project id. Either provide the id or the project name and version together"
     required: false
   projectName:
-    description: "Dependency track or AppThreat project name. Default use the repo name"
+    description: "Dependency track project name. Default use the repo name"
     required: false
   projectVersion:
-    description: "Dependency track or AppThreat project version. Default repo branch"
+    description: "Dependency track project version. Default repo branch"
     required: false
   serverUrl:
-    description: "Dependency track or AppThreat server url. Eg: https://deptrack.appthreat.io"
+    description: "Dependency track server url. Eg: https://deptrack.cyclonedx.org"
     required: false
   apiKey:
-    description: "Dependency track or AppThreat server api key. Use secrets to inject this value"
+    description: "Dependency track server api key. Use secrets to inject this value"
     required: false
 outputs:
   token:
     description: "Server token to query for status"
 runs:
-  using: "node12"
+  using: "node16"
   main: "index.js"
 branding:
   icon: "check"

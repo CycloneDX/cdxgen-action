@@ -17,15 +17,15 @@
     "golang",
     "java"
   ],
-  "author": "Team AppThreat <cloud@appthreat.com>",
+  "author": "Prabhu Subramanian <prabhu@appthreat.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appthreat/cdxgen-action/issues"
   },
   "homepage": "https://github.com/appthreat/cdxgen-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1",
-    "@actions/io": "^1.0.1",
-    "@appthreat/cdxgen": "^1.2.1"
+    "@actions/core": "^1.10.0",
+    "@actions/io": "^1.1.2",
+    "@appthreat/cdxgen": "^7.0.5"
   }
 }
